@@ -153,7 +153,7 @@ export default function DetailedDemo() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {pipelineExplanations.map((phase, index) => {
+            {pipelineExplanations.map((phase) => {
               const Icon = phase.icon;
               const borderColor = phase.color === 'cyan' ? 'border-cyan-500/20' : 'border-blue-500/20';
               const hoverBorder = phase.color === 'cyan' ? 'hover:border-cyan-500/40' : 'hover:border-blue-500/40';

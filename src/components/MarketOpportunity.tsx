@@ -1,4 +1,4 @@
-import { BarChart3, Users, Zap, Target, Shield, TrendingUp, Brain, Cpu, HardDrive, DollarSign } from 'lucide-react';
+import { BarChart3, Users, Zap, Target, Shield, TrendingUp, Brain, HardDrive, DollarSign } from 'lucide-react';
 
 export default function MarketOpportunity() {
   const adoptionStats = [

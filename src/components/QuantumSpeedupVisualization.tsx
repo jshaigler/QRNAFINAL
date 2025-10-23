@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Zap, Activity, TrendingUp, Clock, HardDrive } from 'lucide-react';
 
 export default function QuantumSpeedupVisualization() {
   const [activeMetric, setActiveMetric] = useState('time');
-  const [isAnimating, setIsAnimating] = useState(true);
 
   // Mock data for visualization
   const quantumData = [
@@ -24,14 +23,6 @@ export default function QuantumSpeedupVisualization() {
     { x: 120, y: Infinity, label: '120 nt' },
   ];
 
-  // Simulate animation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsAnimating(prev => !prev);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const timeMetrics = [
     { label: 'Structure Sampling', classical: '2.4s', quantum: '0.02s', speedup: '120x' },

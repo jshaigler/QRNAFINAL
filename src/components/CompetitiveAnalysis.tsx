@@ -140,7 +140,6 @@ export default function CompetitiveAnalysis() {
                 {competitors.map((competitor, index) => {
                   const isOurSolution = competitor.name.includes("Our Solution");
                   const baseClass = "px-6 py-4 text-sm";
-                  const ourClass = isOurSolution ? "bg-gradient-to-r from-cyan-500/10 to-blue-500/10" : "";
                   
                   return (
                     <tr key={index} className={`${isOurSolution ? 'bg-gradient-to-r from-cyan-500/10 to-blue-500/10' : ''}`}>

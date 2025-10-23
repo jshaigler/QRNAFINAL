@@ -1,4 +1,4 @@
-import { Calendar, Target, Zap, CheckCircle2, TrendingUp, Star } from 'lucide-react';
+import { Target, Zap, CheckCircle2, TrendingUp, Star } from 'lucide-react';
 
 export default function RoadmapTimeline() {
   const timeline = [
